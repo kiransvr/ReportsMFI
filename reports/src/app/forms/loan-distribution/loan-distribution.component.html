@@ -1,0 +1,54 @@
+<div class="flex flex-col">
+  <h2 class="mb-4">Loan Distribution by sector</h2>
+  <div class="grid max-w-3xl grid-cols-4 gap-x-6 gap-y-8 md:col-span-3">
+    <div class="sm:col-span-1">
+      <label for="sector" class="block text-sm font-medium leading-6 text-gray-900">Sector</label>
+      <div class="mt-2">
+        <input type="text" name="sector" id="sector"
+          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+      </div>
+    </div>
+
+    <div class="sm:col-span-2">
+      <label for="outstanding-loan" class="block text-sm font-medium leading-6 text-gray-900">Outstanding Loan</label>
+      <div class="mt-2">
+        <input type="text" name="outstanding-loan" id="outstanding-loan"
+          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+      </div>
+    </div>
+
+    <div class="sm:col-span-2">
+      <label for="total-outstanding-loan" class="block text-sm font-medium leading-6 text-gray-900">Total Outstanding
+        Loan</label>
+      <div class="mt-2">
+        <input type="text" name="total-outstanding-loan" id="total-outstanding-loan"
+          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+      </div>
+    </div>
+
+    <div class="sm:col-span-2">
+      <label for="loan-disbursed" class="block text-sm font-medium leading-6 text-gray-900">Loan Disbursed</label>
+      <div class="mt-2">
+        <input type="text" name="loan-disbursed" id="loan-disbursed"
+          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+      </div>
+    </div>
+
+    <div class="sm:col-span-2">
+      <label for="total-loan-disbursed" class="block text-sm font-medium leading-6 text-gray-900">Total Loan
+        Disbursed</label>
+      <div class="mt-2">
+        <input type="text" name="total-loan-disbursed" id="total-loan-disbursed"
+          class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-start gap-x-6 my-8">
+    <button (click)="save()" type="submit"
+      class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+      Save & Next
+    </button>
+  </div>
+
+</div>

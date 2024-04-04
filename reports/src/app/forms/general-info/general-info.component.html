@@ -1,0 +1,87 @@
+<div class="flex flex-col">
+    <h2 class="mb-4">General Information</h2>
+
+    <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-4 md:col-span-2">
+        <div class="sm:col-span-2">
+          <label for="active-borrowers" class="block text-sm font-medium leading-6 text-gray-900">No of Active Borrowers</label>
+          <div class="mt-2">
+            <input type="text" name="active-borrowers" id="active-borrowers"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="sm:col-span-2">
+          <label for="woman-borrowers" class="block text-sm font-medium leading-6 text-gray-900">No of Woman Borrowers</label>
+          <div class="mt-2">
+            <input type="text" name="woman-borrowers" id="woman-borrowers"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="sm:col-span-2">
+          <label for="loans-outstanding" class="block text-sm font-medium leading-6 text-gray-900">Loans Outstanding</label>
+          <div class="mt-2">
+            <input type="text" name="loans-outstanding" id="loans-outstanding"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="sm:col-span-2">
+          <label for="voluntary-saving" class="block text-sm font-medium leading-6 text-gray-900">Voluntary Saving</label>
+          <div class="mt-2">
+            <input type="text" name="voluntary-saving" id="voluntary-saving"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="sm:col-span-2">
+          <label for="compulsory-saving" class="block text-sm font-medium leading-6 text-gray-900">Compulsory Saving</label>
+          <div class="mt-2">
+            <input type="text" name="compulsory-saving" id="compulsory-saving"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="sm:col-span-2">
+          <label for="total-saving" class="block text-sm font-medium leading-6 text-gray-900">Total Saving</label>
+          <div class="mt-2">
+            <input type="text" name="total-saving" id="total-saving"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="sm:col-span-2">
+          <label for="total-asset" class="block text-sm font-medium leading-6 text-gray-900">Total Asset</label>
+          <div class="mt-2">
+            <input type="text" name="total-asset" id="total-asset"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="sm:col-span-2">
+          <label for="total-liabilities" class="block text-sm font-medium leading-6 text-gray-900">Total Liabilities</label>
+          <div class="mt-2">
+            <input type="text" name="total-liabilities" id="total-liabilities"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      
+        <div class="">
+          <label for="total-capital" class="block text-sm font-medium leading-6 text-gray-900">Total Capital</label>
+          <div class="mt-2">
+            <input type="text" name="total-capital" id="total-capital"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+      </div>
+      
+  
+    <div class="flex items-center justify-start gap-x-6 my-8">
+      <button (click)="openDialog()" type="submit"
+        class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        Send Form
+      </button>
+    </div>
+  
+  </div>
+  

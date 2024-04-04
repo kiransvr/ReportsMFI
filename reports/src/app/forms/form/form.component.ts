@@ -12,4 +12,11 @@ export class FormComponent {
     initFlowbite();
   }
 
+  formToBeDisplayed = 'head-office';
+
+  changeForm($event: string): void {
+    console.log('changeForm');
+    this.formToBeDisplayed = $event;
+  }
+
 }
