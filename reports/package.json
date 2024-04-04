@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "deploy:play": "ng build; firebase deploy --only hosting",
     "serve:ssr:reports": "node dist/reports/server/server.mjs"
   },
   "private": true,
@@ -24,7 +25,6 @@
     "@angular/router": "^17.1.0",
     "@angular/ssr": "^17.1.2",
     "express": "^4.18.2",
-    "flowbite": "^2.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

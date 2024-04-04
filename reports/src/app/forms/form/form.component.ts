@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { initFlowbite } from 'flowbite';
+// import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-form',
@@ -9,7 +9,7 @@ import { initFlowbite } from 'flowbite';
 export class FormComponent {
 
   ngOnInit(): void {
-    initFlowbite();
+    // initFlowbite();
   }
 
   formToBeDisplayed = 'head-office';

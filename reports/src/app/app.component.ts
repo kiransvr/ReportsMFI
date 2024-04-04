@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MaterialModule } from '../commons/material.module';
 import { HttpClientModule } from '@angular/common/http';
-import { initFlowbite } from 'flowbite';
+// import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   title = 'reports';
 
   ngOnInit(): void {
-    initFlowbite();
+    // initFlowbite();
   }
 
 
