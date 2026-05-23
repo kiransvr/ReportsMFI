@@ -91,10 +91,36 @@
     .step-content h4 { font-weight: 700; margin-bottom: 0.35rem; color: var(--dark); }
     .step-content p  { color: #666; font-size: 0.95rem; line-height: 1.65; }
 
-    /* INDUSTRIES */
+    /* INDUSTRIES — card grid layout */
     #industries { background: var(--bg-off); }
-    .industry-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--white); border: 1px solid #e0d4b0; padding: 0.6rem 1.2rem; border-radius: 30px; font-size: 0.9rem; font-weight: 500; margin: 0.4rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.2s; cursor: default; }
-    .industry-pill:hover { border-color: var(--gold); color: var(--gold); background: #fdf8ee; }
+    .sector-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 1024px) { .sector-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 700px)  { .sector-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 420px)  { .sector-grid { grid-template-columns: 1fr; } }
+
+    .sector-card {
+      background: var(--white);
+      border: 1px solid #e8dfc0;
+      border-radius: 12px;
+      padding: 1.4rem 1.2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: all 0.2s;
+      cursor: default;
+    }
+    .sector-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 6px 20px rgba(201,153,31,0.15);
+      transform: translateY(-3px);
+      background: #fdfaf2;
+    }
+    .sector-icon { font-size: 1.6rem; margin-bottom: 0.6rem; display: block; }
+    .sector-title { font-size: 0.92rem; font-weight: 700; color: var(--dark); line-height: 1.4; margin-bottom: 0.3rem; }
+    .sector-sub   { font-size: 0.78rem; color: #888; line-height: 1.5; }
 
     /* TESTIMONIALS */
     #testimonials { background: var(--white); }
@@ -228,22 +254,91 @@
   </div>
 </section>
 
-<!-- INDUSTRIES -->
+<!-- INDUSTRIES & SECTORS -->
 <section id="industries">
   <div class="section-label">Who We Serve</div>
-  <h2 class="section-title">Industries & Sectors</h2>
-  <p class="section-sub">AI solutions adapted to the specific operational realities of each sector.</p>
-  <div style="margin-top: 2.5rem;">
-    <span class="industry-pill">🏦 Microfinance Institutions</span>
-    <span class="industry-pill">🌾 Agriculture & AgriFinance</span>
-    <span class="industry-pill">🏥 Healthcare & Telemedicine</span>
-    <span class="industry-pill">🎓 EdTech & Vocational Training</span>
-    <span class="industry-pill">🏪 Retail & FMCG</span>
-    <span class="industry-pill">🚛 Logistics & Supply Chain</span>
-    <span class="industry-pill">🏛️ Government & NGOs</span>
-    <span class="industry-pill">📡 Telecom & Fintech</span>
-    <span class="industry-pill">🏗️ Real Estate</span>
-    <span class="industry-pill">🌍 Development Finance</span>
+  <h2 class="section-title">Industries &amp; Sectors</h2>
+  <p class="section-sub">AI solutions adapted to the specific operational realities of each sector — from global enterprises to community-level institutions.</p>
+
+  <div class="sector-grid">
+
+    <!-- BFSI -->
+    <div class="sector-card">
+      <span class="sector-icon">🏦</span>
+      <div class="sector-title">Banking, Financial Services &amp; Insurance (BFSI)</div>
+      <div class="sector-sub">• Micro Finance Institutions</div>
+    </div>
+
+    <!-- Agriculture -->
+    <div class="sector-card">
+      <span class="sector-icon">🌾</span>
+      <div class="sector-title">Agriculture</div>
+      <div class="sector-sub">AI-driven crop analytics, yield prediction &amp; agri-finance solutions</div>
+    </div>
+
+    <!-- Healthcare -->
+    <div class="sector-card">
+      <span class="sector-icon">🏥</span>
+      <div class="sector-title">Healthcare &amp; Telemedicine</div>
+      <div class="sector-sub">Remote diagnostics, patient management &amp; health AI</div>
+    </div>
+
+    <!-- Retail -->
+    <div class="sector-card">
+      <span class="sector-icon">🛒</span>
+      <div class="sector-title">Retail and E-Commerce</div>
+      <div class="sector-sub">Personalization, demand forecasting &amp; customer intelligence</div>
+    </div>
+
+    <!-- Manufacturing -->
+    <div class="sector-card">
+      <span class="sector-icon">🏭</span>
+      <div class="sector-title">Manufacturing and Supply Chain</div>
+      <div class="sector-sub">Predictive maintenance, quality control &amp; inventory AI</div>
+    </div>
+
+    <!-- Education -->
+    <div class="sector-card">
+      <span class="sector-icon">🎓</span>
+      <div class="sector-title">Education, EdTech &amp; Vocational Training</div>
+      <div class="sector-sub">Adaptive learning, assessment automation &amp; skills platforms</div>
+    </div>
+
+    <!-- IT -->
+    <div class="sector-card">
+      <span class="sector-icon">💻</span>
+      <div class="sector-title">Information Technology (IT)</div>
+      <div class="sector-sub">AI ops, code intelligence, DevSecOps automation &amp; IT support bots</div>
+    </div>
+
+    <!-- Public Sector -->
+    <div class="sector-card">
+      <span class="sector-icon">🏛️</span>
+      <div class="sector-title">Public Sector, Governance &amp; NGOs</div>
+      <div class="sector-sub">e-Government AI, citizen services &amp; development program analytics</div>
+    </div>
+
+    <!-- Telecom -->
+    <div class="sector-card">
+      <span class="sector-icon">📡</span>
+      <div class="sector-title">Telecom</div>
+      <div class="sector-sub">Churn prediction, network analytics &amp; AI-powered customer care</div>
+    </div>
+
+    <!-- Logistics -->
+    <div class="sector-card">
+      <span class="sector-icon">🚛</span>
+      <div class="sector-title">Logistics &amp; Supply Chain</div>
+      <div class="sector-sub">Route optimization, fleet intelligence &amp; warehouse automation</div>
+    </div>
+
+    <!-- Real Estate -->
+    <div class="sector-card">
+      <span class="sector-icon">🏗️</span>
+      <div class="sector-title">Real Estate</div>
+      <div class="sector-sub">Property valuation AI, market analytics &amp; smart document processing</div>
+    </div>
+
   </div>
 </section>
 
